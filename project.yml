@@ -1,0 +1,23 @@
+name: DeltaCraft
+options:
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+targets:
+  DeltaCraft:
+    type: application
+    platform: iOS
+    sources:
+      - path: DeltaCraft
+        excludes:
+          - "Info.plist"
+    info:
+      path: DeltaCraft/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.deltacraft.app
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        CODE_SIGN_STYLE: Automatic
